@@ -19,7 +19,7 @@ cp www.conf /etc/php/7.2/fpm/pool.d/
 
 cp php72.conf /etc/nginx/common/
 
-<b>reiniciando Serviços</b>
+<b>Reiniciando Serviços</b>
 
 service nginx reload
 
