@@ -19,6 +19,21 @@ cp www.conf /etc/php/7.2/fpm/pool.d/
 
 cp php72.conf /etc/nginx/common/
 
+Altere o arquivo upstream.conf
+nano /etc/nginx/conf.d/upstream.conf
+
+Dê:
+# php7.0-fpm
+upstream php7 {
+    server 127.0.0.1:9070;
+}
+
+Para:
+# php7.0-fpm
+upstream php7 {
+    server 127.0.0.1:9072;
+}
+
 <b>Reiniciando Serviços</b>
 
 service nginx reload
